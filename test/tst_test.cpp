@@ -23,6 +23,8 @@ test::~test() {}
 void test::test_gcd() {
     GCD g;
     QCOMPARE(g.gcd(10, 5), 5);
+    QCOMPARE(g.gcd(10, 11), 1);
+    QCOMPARE(g.gcd(10, 0), 0);
 }
 
 QTEST_APPLESS_MAIN(test)
