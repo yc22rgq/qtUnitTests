@@ -16,3 +16,8 @@ int GCD::gcd(int a, int b) {
     }
     return b;
 }
+
+int GCD::lcm(int a,int b) {
+    if (gcd(a, b) == 0) return 0;
+    return a/gcd(a,b) * b;
+}

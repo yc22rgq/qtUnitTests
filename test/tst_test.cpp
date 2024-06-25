@@ -25,6 +25,10 @@ void test::test_gcd() {
     QCOMPARE(g.gcd(10, 5), 5);
     QCOMPARE(g.gcd(10, 11), 1);
     QCOMPARE(g.gcd(10, 0), 0);
+
+    QCOMPARE(g.lcm(10, 5), 10);
+    QCOMPARE(g.lcm(10, 11), 110);
+    QCOMPARE(g.lcm(10, 0), 0);
 }
 
 QTEST_APPLESS_MAIN(test)
